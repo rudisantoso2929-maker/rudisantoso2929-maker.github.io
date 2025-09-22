@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const textElement = document.querySelector('.typing-text');
     const textToType = "Selamat datang di portofolio saya.";
     let i = 0;
-    const speed = 100; // Kecepatan ketik dalam milidetik
+    const speed = 100;
 
     function typeWriter() {
         if (i < textToType.length) {

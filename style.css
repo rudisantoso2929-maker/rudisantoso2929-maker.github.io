@@ -93,6 +93,11 @@ body {
     transform: scale(1.05);
 }
 
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
 .hero-content h2 {
     font-size: 3rem;
     color: var(--accent-color);
@@ -102,15 +107,11 @@ body {
     margin: 0 auto;
     letter-spacing: .15em;
     animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
-    position: relative;
-    z-index: 10;
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin-top: 10px;
-    position: relative;
-    z-index: 10;
 }
 
 /* Animasi Efek Ketik */
@@ -177,16 +178,6 @@ body {
 .service-card:hover, .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2);
-}
-
-/* Gaya untuk Gambar Projek */
-.project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-card a {
