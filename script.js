@@ -2,8 +2,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const textElement = document.querySelector('.typing-text');
     const textToType = "Selamat datang di portofolio saya.";
+    const totalDuration = 3000; // 3 detik dalam milidetik
+    const speed = totalDuration / textToType.length;
     let i = 0;
-    const speed = 100;
 
     function typeWriter() {
         if (i < textToType.length) {
@@ -12,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(typeWriter, speed);
         }
     }
-
     typeWriter();
 });
 
